@@ -5,4 +5,11 @@
         <label for="floatingTextarea">Comments</label>
     </div>
     <button (click)="elkuld()" type="button" class="btn btn-warning mt-3">Küldés</button>
-</div>
+    <ng-container *ngFor="let uzim of messages">
+        <div class="row">
+            <span>Küldő:</span>
+            <p class="col text-start" id="p1">&emsp;{{uzim.committer}}</p>
+            <p class="col text-end" id="p2">{{uzim.message}}</p>
+        </div>
+    </ng-container>
+</div> 
