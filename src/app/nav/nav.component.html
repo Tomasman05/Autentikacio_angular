@@ -13,7 +13,7 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/signup" routerLinkActive="selected">Regisztráció</a>
         </li>
-        <li class="nav-item">
+        <li *ngIf="user" class="nav-item">
           <a (click)="signOut()" class="nav-link" routerLink="/home" routerLinkActive="selected">Kilépés</a>
         </li>
       </ul>

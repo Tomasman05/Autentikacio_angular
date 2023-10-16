@@ -1,1 +1,8 @@
-<h1>Üdv a titkos osztály chaten</h1>
+<div class="container">
+    <h1>Üdv a titkos osztály chaten</h1>
+    <div class="form-floating">
+        <textarea [(ngModel)]="newMessage" class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea">Comments</label>
+    </div>
+    <button (click)="elkuld()" type="button" class="btn btn-warning mt-3">Küldés</button>
+</div>

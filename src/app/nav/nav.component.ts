@@ -8,7 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
-  constructor(private auth:AuthService, private router:Router){}
+  user:any
+  constructor(private auth:AuthService, private router:Router){
+    this.auth.getUser().subscribe((u)=>this.user = u)
+  }
   signOut(){
     this.auth.signOut().then(()=>this.router.navigate(["/home"])).catch((hiba)=>console.log(hiba))
   }
