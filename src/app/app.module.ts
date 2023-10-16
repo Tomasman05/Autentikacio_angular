@@ -11,13 +11,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavComponent } from './nav/nav.component';
 import { Environments } from './environments';
 import { FormsModule } from '@angular/forms';
+import { SigninComponent } from './signin/signin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SignUpComponent,
-    NavComponent
+    NavComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
